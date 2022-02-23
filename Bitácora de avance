@@ -16,7 +16,7 @@
 **23/02/22**
 ##REQUERIMIENTOS FUNCIONALES:
 - Cambiar redacción (quitar de las descripciones las especificaciones del proceso).
-- Implementar casos de uso, basarnos en artefactos reconocidos. 
+- Implementar casos de uso, basarnos en [artefactos reconocidos] (https://www.juntadeandalucia.es/servicios/madeja/contenido/recurso/416). 
 - Generar un bloque de alcances y limitaciones (mientras más simple mejor).
 - Agregar las funcionalidades extra.
 - Implementar una serie de analíticas que permitan medir la actividad de los usuarios.
