@@ -30,3 +30,9 @@
 - [ ] Implementar bosquejos de las interfaces para explicar y mapear.
 ### REQUERIMIENTOS NO FUNCIONALES:
 - [x] Correctos.
+
+**09/03/22**
+
+### REQUERIMIENTOS FUNCIONALES
+- [ ] Agregar 2 requerimientos más o encontrar una forma óptima para repartirlos en el equipo.
+- [ ] Contemplar las excepciones de cada requerimientos (que nos interese administrar).
