@@ -4,7 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"discord.py" = "*"
+"discord.py" = {extras = ["voice"], version = "*"}
+youtube-dl = "*"
 
 [dev-packages]
 
