@@ -72,6 +72,7 @@ entrada2.pack(fill = X, padx = 5, pady = 5, ipadx = 5, ipady = 5)
 
 #### Crear botón de suma
 Ahora nos toca hacer funcionar nuestra interfaz, pues aunque ya podemos introducir números, esta no realiza nada con ellos.
+
 Primero crearemos un botón y le asignaremos un parámetro fundamental, el cual es ***command***, este nos permite ejecutar una función que se encuentre en nuestro código cada que se pulse el botón. Tras esto, solo nos queda empaquetar nuestro botón.
 
 ###### Código resultante:
@@ -85,6 +86,7 @@ Para esta función utilizaremos tres variables:
 - Suma
 - entrada1
 - entrada2
+
 Para las variables de entrada utilizaremos un método llamado ***get***, el cual recolecta la información introducida en nuestras entradas, la cual pasaremos a enteros y la sumaremos para guardarla en suma; por último solo nos queda retornar el valor utilizando el método ***set***.
 
 ###### Código resultante:
