@@ -20,6 +20,7 @@ Primeramente debemos de importar la librería Tkinter, la cual ya viene preinsta
 #### Crear la raíz
 La raíz es el primer elemento que debemos crear, pues es donde estarán todos nuestros demás elementos llamados **Widgets**.
 Después de ello, le pondremos un título, un tamaño y un color de fondo; esto le irá dando más forma a nuestra interfaz. Además colocaremos una variable que nos servirá más adelante.
+
 Y para que funcione solamente añadiremos un método llamado ***mainloop***.
 
 ###### Código resultante:
