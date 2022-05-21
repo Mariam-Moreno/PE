@@ -87,7 +87,7 @@ Para esta función utilizaremos tres variables:
 - entrada1
 - entrada2
 
-Para las variables de entrada utilizaremos un método llamado ***get***, el cual recolecta la información introducida en nuestras entradas, la cual pasaremos a enteros y la sumaremos para guardarla en suma; por último solo nos queda retornar el valor utilizando el método ***set***.
+Para las variables de entrada utilizaremos un método llamado ***get***, el cual recolecta la información introducida en nuestras entradas, la cual pasaremos a enteros y la sumaremos para guardarla en suma; por último, solo nos queda retornar el valor utilizando el método ***set***.
 
 ###### Código resultante:
 ```
