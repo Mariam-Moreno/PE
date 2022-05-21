@@ -6,7 +6,10 @@ En esta guía les mostraremos paso a paso cómo realizar la suma de dos números
 - Python 3
 
 #### Resultados esperados
-<img src="img/resultado.png" alt="resultado"/>
+<p align="center"> 
+   <img src="img/resultado.png" alt="resultado"/>
+</p>
+
 
 ## Instrucciones
 #### Importar la librería Tkinter
@@ -28,7 +31,10 @@ ventana.config(background = 'dark turquoise')
 suma = StringVar()
 ventana.mainloop()
 ```
-<img src="img/proceso1.png" alt="raiz"/>
+<p align="center"> 
+   <img src="img/proceso1.png" alt="raiz"/>
+</p>
+
 
 #### Crear primer entrada
 Ahora lo que nos corresponde es realizar el primer ***Entry***, que no es más que el widget que nos permitirá introducir nuestro primer número, sin embargo, a este le acompañará un ***Label*** que es un pequeño cuadro de texto donde le indicaremos al usuario que ahí debe introducir el primer valor.
@@ -57,7 +63,11 @@ e2.pack(padx = 5, pady = 5, ipadx = 5, ipady = 5, fill = X)
 entrada2 = Entry(ventana)
 entrada2.pack(fill = X, padx = 5, pady = 5, ipadx = 5, ipady = 5)
 ```
-<img src="img/proceso2.png" alt="entradas"/>
+
+<p align="center"> 
+   <img src="img/proceso2.png" alt="entradas"/>
+</p>
+
 
 #### Crear botón de suma
 Ahora nos toca hacer funcionar nuestra interfaz, pues aunque ya podemos introducir números, esta no realiza nada con ellos.
@@ -127,4 +137,7 @@ resultado.pack(padx = 5, pady = 5)
 
 ventana.mainloop()
 ```
-<img src="img/muestra.png" alt="muestra"/>
+
+<p align="center"> 
+   <img src="img/muestra.png" alt="muestra"/>
+</p>
