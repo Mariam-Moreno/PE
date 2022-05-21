@@ -7,7 +7,7 @@ En esta guía les mostraremos paso a paso cómo realizar la suma de dos números
 
 #### Resultados esperados
 <p align="center"> 
-   <img src="img/resultado.png" alt="resultado" width=30%>
+   <img src="img/resultado.png" alt="resultado" width=50%>
 </p>
 
 
@@ -32,7 +32,7 @@ suma = StringVar()
 ventana.mainloop()
 ```
 <p align="center"> 
-   <img src="img/proceso1.png" alt="raiz"/>
+   <img src="img/proceso1.png" alt="raiz" width=50%/>
 </p>
 
 
@@ -65,7 +65,7 @@ entrada2.pack(fill = X, padx = 5, pady = 5, ipadx = 5, ipady = 5)
 ```
 
 <p align="center"> 
-   <img src="img/proceso2.png" alt="entradas"/>
+   <img src="img/proceso2.png" alt="entradas" width=50%/>
 </p>
 
 
@@ -139,5 +139,5 @@ ventana.mainloop()
 ```
 
 <p align="center"> 
-   <img src="img/muestra.png" alt="muestra"/>
+   <img src="img/muestra.png" alt="muestra" width=50%/>
 </p>
