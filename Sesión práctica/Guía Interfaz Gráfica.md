@@ -7,7 +7,7 @@ En esta guía les mostraremos paso a paso cómo realizar la suma de dos números
 
 #### Resultados esperados
 <p align="center"> 
-   <img src="img/resultado.png" alt="resultado"/>
+   <img src="img/resultado.png" alt="resultado" width=30%>
 </p>
 
 
