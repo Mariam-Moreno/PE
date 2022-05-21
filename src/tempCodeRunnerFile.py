@@ -1,0 +1,1 @@
+print(f"My bot {bot.user} is ready")
