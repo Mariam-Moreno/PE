@@ -27,17 +27,35 @@ def analiticas(valor):
 #Analíticas
 @bot.command()
 async def analytics(ctx):
-    f = open("C:/Users/danie/OneDrive/Documentos/LIS/LIS - Segundo Semestre/Programación Estructurada/PE/src/analiticas.txt","r")
+    musica = 0; preguntas = 0; yt = 0; hp = 0
     cont = 0
-    ping = 0
+    f = open("C:/Users/danie/OneDrive/Documentos/LIS/LIS - Segundo Semestre/Programación Estructurada/PE/src/analiticas.txt","r")
     texto = f.read()
     j = len(texto)
     while (cont < j):
         if (texto[cont] == 'P'):
-            ping += 1
+            preguntas += 1
+        elif (texto[cont] == 'M'):
+            musica += 1        
+        elif (texto[cont] == 'Y'):
+            yt += 1    
+        elif (texto[cont] == 'H'):
+            hp += 1 
         cont += 1
     f.close()
-    await ctx.send(ping)
+
+    embed = discord.Embed(title=f"{ctx.guild.name}", description="Cantidad de ejecuciones en cada apartado", timestamp=datetime.datetime.utcnow(), color=discord.Color.blue())
+    embed.add_field(name="Musica", value = musica)
+    embed.add_field(name="Preguntas", value = preguntas)
+    embed.add_field(name="Youtube", value = yt)
+    embed.add_field(name="Help", value = hp)
+    embed.add_field(name="Server Owner", value=f"{ctx.guild.owner}")
+    embed.add_field(name="Server Region", value=f"{ctx.guild.region}")
+    embed.add_field(name="Server ID", value=f"{ctx.guild.id}")
+    embed.set_thumbnail(url=f"{ctx.guild.icon}")
+    embed.set_thumbnail(url="https://pluralsight.imgix.net/paths/python-7be70baaac.png")
+
+    await ctx.send(embed = embed)
 
 
 #Comando ayuda
@@ -117,10 +135,17 @@ async def desconectar(ctx):
     analiticas("M")
     voz = get(bot.voice_clients, guild = ctx.guild)
     await voz.disconnect()
+    await ctx.send("Bye bye")
 
 @bot.command()
-async def play(ctx, url):
+async def play(ctx, *, search):
     analiticas("M")
+
+    query_string = parse.urlencode({'search_query': search})
+    htmlContent = request.urlopen('http://www.youtube.com/results?' + query_string)
+    search_results = re.findall('watch\?v=(.{11})',htmlContent.read().decode('utf-8'))
+    url = 'https://www.youtube.com/watch?v=' + search_results[0]
+
 
     ctx.voice_client.stop()
 
@@ -133,6 +158,8 @@ async def play(ctx, url):
         url2 = info['formats'][0]['url']
         source = await discord.FFmpegOpusAudio.from_probe(url2, **FFMPEG_OPTIONS)
         vc.play(source)
+
+    await ctx.send("Reproduciendo " + search)
 
 @bot.command()
 async def pause(ctx):
@@ -151,7 +178,7 @@ async def stop(ctx):
     analiticas("M")
     await ctx.send('Música detenida')
     await ctx.voice_client.stop()
-    
+
 
 #Estado del Bot
 @bot.event
