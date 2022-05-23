@@ -1,0 +1,1 @@
+await ctx.send(random.choice(preguntas))
